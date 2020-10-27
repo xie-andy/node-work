@@ -1,6 +1,7 @@
 // Imports
 import * as express from 'express';
 import * as formidableMiddleware from 'express-formidable';
+import * as contactsController from './controllers/contactsController';
 
 // Express setup
 const port = 3000;
@@ -24,8 +25,3 @@ app.post('/create', (req: any, res: any) => {
 // Express server startup
 app.listen(port);
 console.log(`Listening on port number: ${port}`);
-
-/*
-import * as mongo from 'mongoDB';
-const database = mongoDB;
-*/
